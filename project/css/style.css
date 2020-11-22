@@ -7,8 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header, main, footer {
-    max-width: auto;
+header, main, footer{
     margin: 0 auto;
     align-items: center;
 }
@@ -59,7 +58,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
-    width: 960px;
+    width: 75%;
 }
 
 main section p {
@@ -68,18 +67,21 @@ main section p {
 }
 
 .banner-grid {
-    height: 400px;
-    width: 960px;
+    height: auto;
     grid-column: 1/4;
     position: relative;
     z-index: -1;
 }
+
+.templebanner {
+    width: 100%;
+}
+
 .action {
     grid-row: 1;
     grid-column: 1;
-    position: relative;
-    bottom: 300px;
-    right: 50px;
+    position: absolute;
+    bottom: 150px;
     z-index: 1;
 	background-color: rgba(238, 235, 211, 0.65);
 	font-size: .8em;
@@ -131,14 +133,211 @@ main section p {
     box-shadow: 5px 5px 5px #999;
 }
 
+main_amen{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 75%;
+}
+
+main_amen section p {
+    background-color: #DABECA;
+    padding: 1em;
+}
+
+.amentitles {
+    text-align: center;
+}
+
+.pageone{
+    grid-column: 1/4;
+    font-size: 3em;
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+.firstamen-image, .secondamen-image, .thirdamen-image{
+    grid-row: 2;
+    position: relative;
+}
+
+.firstamen, .secondamen, .thirdamen{
+    grid-row: 3;
+    position: relative;
+    bottom: 23px;
+}
+
+.fourthamen-image, .fifthamen-image, .sixthamen-image{
+    grid-row: 4;
+    position: relative;
+}
+
+.fourthamen, .fifthamen, .sixthamen{
+    grid-row: 5;
+    position: relative;
+    bottom: 23px;
+}
+
+main_temple{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 75%;
+}
+
+main_temple section p {
+    background-color: #DABECA;
+    padding: 1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+.pagetwo{
+    grid-column: 1/4;
+    font-size: 3em;
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+.historypic {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.history {
+    grid-row: 2;
+    grid-column: 2/4;
+    padding:10px;
+    position: relative;
+    bottom: 55px;
+}
+
+.info {
+    grid-row: 3;
+}
+
+.didyou {
+    grid-row: 3;
+}
+
+.symbolpic {
+    grid-row: 4;
+    padding-bottom: 20px;
+}
+
+.events {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+main_res {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 75%;
+}
+
+h2 {
+    grid-column: 1/4;
+}
+
+.pagethree {
+    grid-column: 1/4;
+    font-size: 3em;
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+.top {
+    position: absolute;
+    left: 527px;
+    top: 300px;
+    z-index: 1;
+    grid-row: 2;
+}
+
+.temple-back {
+    position: relative;
+    z-index: -1;
+    width: 300%;
+    opacity: 0.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    position: absolute;
+    top: 400px;
+    left: 431px;
+}
+
+
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    /* To make sure that all text fields have the same font settings
+By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px;
+    /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+between the labels and their text fields */
+    margin-left: .5em;
+}
+
 footer {
     background-color: #BF8B85;
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
     border-radius: 1rem;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 10px;
 }
 
 .contact {
@@ -170,7 +369,8 @@ nav a:hover {
 }
 
 @media screen and (max-width: 550px) {
-    .______ {
+    main {
       display: block;
     }
-  }
+}
+
