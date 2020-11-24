@@ -7,7 +7,22 @@
     <meta name="description" content="This website project is to provide information about the
     services offered to meet the needs of those who come to serve in the temple or who participate in events.">
     <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker1" ).datepicker();
+        } );
+    </script>
+    <script>
+        $( function() {
+            $( "#datepicker2" ).datepicker();
+        } );
+    </script>
 </head>
 
 <body>
@@ -16,83 +31,71 @@
         <h1>Temple Inn & Suites</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="amentities.html">Amentities</a></li>
                 <li><a href="mytemple.html">Temple Spotlight</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
             </ul>
         </nav>
     </header>
-    <main_res>
-        <h2 class="pagethree">Reservations</h2>
-        <section class="reservationform">
-            <p class="top">When you're here, you're home</p>
-            <img class="temple-back" src="images/san-diego-temple-form.jpg" alt="San Diego Temple Background">
+    <main>
+        <section class="main_res">
+            <h2 class="pagethree">Reservations</h2>
+            <section class="reservationform">
+                <p class="top"><strong>WHEN YOU'RE HERE, YOU'RE HOME</strong></p>
+                <img class="temple-back" src="images/san-diego-temple-form.jpg" alt="San Diego Temple Background">
         
-            <form>
-                <fieldset>
-                    <ul>
-                        <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
-                        <ul>
-                            <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
-                            <input type="text" id="name" name="user_name" required>
+                <form>
+                    <fieldset>
+                        <p class="required">Required fields are followed by <abbr title="required">*</abbr>.</p>
+                            <ul>
+                                <li>
+                                    <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="text" id="name" name="user_name" required>
+                                </li>
+                                <li>
+                                    <label for="mail">E-mail:<abbr title="required" aria-label="required">*</abbr></label>
+                                    <input type="email" id="mail" name="user_email" required>
+                                </li>
+                                <li>
+                                    Arrival: <input type="text" id="datepicker1">
+                                </li>
+                                <li>
+                                    Departure: <input type="text" id="datepicker2">
+                                </li>
+                    
+                                <li>
+                                    <label for="number-adult">Number of Adults:</label>
+                                    <select id="number-adult" name="adult">
+                                        <option>1</option>
+                                        <option selected>2</option>
+                                        <option>3</option>
+                                        <option>4+</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="number-children">Number of Children:</label>
+                                    <select id="number-children" name="children">
+                                        <option>1</option>
+                                        <option selected>2</option>
+                                        <option>3</option>
+                                        <option>4+</option>
+                                    </select>
+                                </li>
                             
-                            <label for="mail">E-mail:<abbr title="required" aria-label="required">*</abbr></label>
-                            <input type="email" id="mail" name="user_email" required>
-                        </ul>
-                    
-                        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                        <link rel="stylesheet" href="/resources/demos/style.css">
-                        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-                        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                        <script>
-                            $( function() {
-                                $( "#datepicker1" ).datepicker();
-                            } );
-                        </script>
-                        <script>
-                            $( function() {
-                                $( "#datepicker2" ).datepicker();
-                            } );
-                        </script>
-
-                        <p class="date">
-                            Arrival: <input type="text" id="datepicker1">
-                        </p>
-                        <p class="date">
-                            Departure: <input type="text" id="datepicker2">
-                        </p>
-            
-                        <ul>
-                            <label for="number-adult">Number of Adults:</label>
-                            <select id="number-adult" name="adult">
-                                <option>1</option>
-                                <option selected>2</option>
-                                <option>3</option>
-                                <option>4+</option>
-                            </select>
-                            <br>
-                            <label for="number-children">Number of Children:</label>
-                            <select id="number-children" name="children">
-                                <option>1</option>
-                                <option selected>2</option>
-                                <option>3</option>
-                                <option>4+</option>
-                            </select>
-                        </ul>
-                    
-                        <ul>
-                            <label for="msg">Special Requests:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </ul>
-                        <ul class="button">
-                            <button type="submit">Check Availability</button>
-                        </ul>
-                    </ul>
-                </fieldset>
-            </form>
+                                <li>
+                                    <label for="msg">Special Requests:</label>
+                                    <textarea id="msg" name="user_message"></textarea>
+                                </li>
+                                <li class="button">
+                                    <button type="submit">Check Availability</button>
+                                </li>
+                            </ul>
+                    </fieldset>
+                </form>
+            </section>
         </section>
-    </main_res>
+    </main>
     <footer>
         <div class="contact">
             📍 355 Wisconsin Avenue
