@@ -336,7 +336,7 @@ nav a:hover {
     background-color: #DABECA;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .main_main, .main_amen, .main_res, .main_temple {
       display: block;
     }
