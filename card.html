@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Write the HTML and CSS to build a simple media card UI">
+    <title>Document</title>
+<style>
+    img {
+        max-width: 100%;
+    }
+
+    .card{
+        width: 320px;
+        box-shadow: 1px 1px 4px 1px #ccc;
+        border-radius: 3px 3px 3px 3px;
+        background-color: white; 
+        overflow: hidden;
+    }
+    p {
+        font: sans-serif, Arial, Helvetica;
+        padding: 0 15px;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    .buttongroup {
+        grid-row: 1;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        
+    }
+
+    .buttongroup button{
+        border: 1px solid gray;
+        padding: 8px 10px;
+        margin: 0;
+        cursor: pointer; 
+        float: left; 
+        background-color: white;
+    }
+
+    .buttongroup button:not(:last-child) {
+        border-right: none;
+    }
+
+    .viewButton {
+        border-radius: 3px 0 0 3px;
+    }
+
+    .editButton {
+        border-radius: 0 3px 3px 0;
+    }
+
+    button {
+        font-size: 13px;
+    }
+    
+    .time {
+        font-size: 14px;
+        grid-row: 1;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 7.5px;   
+    }
+
+</style>
+</head>
+<body>
+<article class="card">
+       <img src="https://picsum.photos/320/240" alt="placeholder">
+       <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer </p>
+<footer>
+    <div class="buttongroup">
+    <button type="button" class="viewButton"><span style="color:gray">View</span></button>
+    <button type="button" class="editButton"><span style="color:gray">Edit</span></button>
+    </div>
+    
+    <div class="time"><span style="color:gray">9 mins</span></div>
+</footer>
+</article> 
+</body>
+</html>
