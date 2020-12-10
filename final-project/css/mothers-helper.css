@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Baloo+Chettan+2&family=Bebas+Neue&family=Delius+Unicase:wght@700&family=Kavoon&family=Lato:wght@100&family=Mr+Dafoe&family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Baloo+Chettan+2&family=Lato:wght@100&family=Mr+Dafoe&family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color: #D3B99F;
+    --secondary-color: #9AADBF;
+    --accent1-color: #C17767;
+    --accent2-color: #6D98BA;
+    --heading-font: "Kavoon";
+    --subheading-font: "Playfair Display";
+    --paragraph-font: Arapey, Helvetica, sans-serif
+}
+
+html {
+    background-color: var(--primary-color)
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h3 {
+    font-family: var(--subheading-font);
+    color: var(--accent2-color);
+}
+
+h4 {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);    
+}
+h5, h6 {
+    font-family: var(--heading-font);
+    color: black;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+}
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: black;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main>.mission {
+    max-width: 900px;
+}
+
+.banner-grid {
+    grid-column: 1/3;
+    position: relative;
+    z-index: 1;
+}
+
+.home-banner {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.mission {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.M1 {
+    padding: 0 40px;
+}
+
+.aboutus {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.subscribe {
+    grid-column: 1/3;
+    margin: auto;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    width: auto;
+    padding: 10px;
+}
+
+.top-layer{
+    display: flex;
+}
+
+.contact {
+    flex: 50%;
+    padding: 15px 0 0 5px;
+}
+
+.social {
+    flex: 50%;
+    text-align: end;
+}
+
+.copyright {
+    text-align: center;
+}
