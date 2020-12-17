@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The purpose for this website is to collect and 
+    present information to mothers about the birthing options availble to them."> 
+    <title>Mother's Helper- Birthing 101 </title>
+    <link rel="stylesheet" href="../css/mothers-helper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="../images/pregnancy-logo.png" alt="Mother's Helper logo">
+        <h1>Mother's Helper: Birthing 101</h1>
+        <nav>
+            <ul class="topnav">
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="birthing-options.html">Birthing Options</a></li>
+                <li><a href="birthing-stories.html">Birthing Stories</a></li>
+                <li><a href="FAQS.html">FAQS</a></li>
+                <li><form><input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                    </form></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="faqtitle">Frequently Asked Questions</h2>
+        <h3>General Questions</h3>
+            <button class="accordion">Is childbirth painful?</button>
+            <div class="panel">
+                <p>Every woman's experience is unique but most mothers would honestly say, yes, childbirth is painful. However, it is short-lived, and there are many types and methods to effectively reduce the intensity of childbirth pain.</p>
+            </div>
+            <button class="accordion">Who can be with me at birth?</button>
+            <div class="panel">
+                <p>You can choose who you would like to be with you during labor and delivery. You will need to take into consideration the guidelines of your hospital or birthing center. Most hospitals and birthing centers encourage women to have a support person.</p>
+            </div>
+            <button class="accordion">Is it to be so worried about giving birth?</button>
+            <div class="panel">
+                <p>Being anxious about giving birth is very common. Childbirth is a major life event, so don’t be hard on yourself for having these feelings.</p>
+            </div>
+        <h3>Hospital Birth Questions</h3>
+            <button class="accordion">What types of childbirth and delivery methods are available in a hospital?</button>
+            <div class="panel">
+                <p>Women giving birth in the hospital have most of the same options as home births, she has quicker access to surgical interventions if an emergency occurs. Women giving birth in a hospital or birth center have the option to attempt a vaginal delivery with or without medication.</p>
+            </div>
+            <button class="accordion">Can I bring a birthing plan and will it be honored?</button>
+            <div class="panel">
+                <p>Yes, mothers are always welcomed to bring a birth plan with them. We will do our best to honor your birth plan unless there is a medical emergency and things need to be change.</p>
+            </div>
+            <button class="accordion">Is it necessary to take a hospital tour before my delivery?</button>
+            <div class="panel">
+                <p>Yes! One way to relieve your concerns is to take a pregnancy hospital tour or a tour of the birth center where you plan to deliver.</p>
+            </div>
+        <h3>Birthing Center Questions</h3>
+            <button class="accordion">What types of childbirth delivery and delivery methods are available in a birthing center?</button>
+            <div class="panel">
+                <p>Some people consider a birthing center delivery the best of both worlds. The setting is relaxing and home-like, and mind-body support options for childbirth pain such as hypnosis, water births, and doulas are readily available. </p>
+            </div>
+            <button class="accordion">What is a birthing Center?</button>
+            <div class="panel">
+                <p>The American Association of Birth Centers defines a birth center as a home-like facility existing within a healthcare system with a program of care designed in the wellness model of pregnancy and birth. Birth centers are guided by principles of prevention, sensitivity, safety, appropriate medical intervention, and cost effectiveness.</p>
+            </div>
+            <button class="accordion">Who can give birth at a birth center?</button>
+            <div class="panel">
+                <p>More than 80% of women are low-risk for complications for pregnancy and birth, so most women are good candidates for midwifery and birth center care.</p>
+            </div>
+        <h3>Home Birth Questions</h3>
+            <button class="accordion">What natural childbirth methods are available at home?</button>
+            <div class="panel">
+                <p>There are a number of different childbirth classes to choose from. In any class, you learn about the stages of labor, breathing, and relaxation techniques, what happens to the vagina after childbirth, and how to be prepared for the delivery and new baby. </p>
+            </div>
+            <button class="accordion">What is the cost difference of a home birth vs a hospital birth?</button>
+            <div class="panel">
+                <p>Cost difference really depends on the type of birth you have, the hospital in which you deliver, your care provider, and your insurance</p>
+            </div>
+            <button class="accordion">Is a home birth safe?</button>
+            <div class="panel">
+                <p>Yes! Having your baby in your home with a midwife that is trained in out-of-hospital birth is safe. There have been numerous studies that illustrate a woman with a normal pregnancy is just as safe, or safer, having her baby at home with trained midwives as she is in the hospital</p>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+        <form class="contactquest">
+            <fieldset>
+                <p class="faqp"><strong>Have a Question?</strong></p>
+                <p class="faqp">Contact Us!</p>
+                <ul class="faqlist">
+                <li>
+                    <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="text" id="name" name="user_name" required>
+                </li>
+                <li>
+                    <label for="mail">E-mail:<abbr title="required" aria-label="required">*</abbr></label>
+                    <input type="email" id="mail" name="user_email" required>
+                </li>
+                <li>
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="user_question"></textarea>
+                </li>
+                <li>
+                    <button class="faqbutton" type="submit">Submit</button>
+                </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <section class="top-layer">
+        <div class="contact">
+        📍 5678 South 3456 East
+        <br> Orem, UT 84097
+        <br>📞 801-555-7878
+        <br>✉️ info@mothershelper.com
+        </div>
+        <div class="social">
+            <a href="http://www.facebook.com"><img src="../images/facebook.png" alt="Facebook Icon"></a>
+            <a href="http://www.instagram.com"><img src="../images/instagram.png" alt="Instagram Icon"></a>
+            <a href="http//www.youtube.com"><img src="../images/youtube.png" alt="Youtube Icon"></a>
+        </div>
+    </section>
+        <div class="copyright">
+            Copyright &copy;2020 Mother's Helper: Birthing 101 | All Rights Reserved | Privacy and Cookie Statement | Yesenia Montiel | <a href="../script/final-site-plan.html">Site Plan</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -7,18 +7,21 @@
     present information to mothers about the birthing options availble to them."> 
     <title>Mother's Helper- Birthing 101 </title>
     <link rel="stylesheet" href="../css/mothers-helper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <img src="../images/pregnancy-logo.png" alt="Mother's Helper logo">
         <h1>Mother's Helper: Birthing 101</h1>
         <nav>
-            <ul>
-                <ul><a href="home-page.html">Home</a></ul>
-                <ul><a href="birthing-options.html">Birthing Options</a></ul>
-                <ul><a href="birthing-stories.html">Birthing Stories</a></ul>
-                <ul><a href="FAQS.html">FAQS</a></ul>
-                <ul><input type="text" placeholder="Search"></ul>
+            <ul class="topnav">
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="birthing-options.html">Birthing Options</a></li>
+                <li><a href="birthing-stories.html">Birthing Stories</a></li>
+                <li><a href="FAQS.html">FAQS</a></li>
+                <li><form><input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                    </form></li>
             </ul>
         </nav>
     </header>
@@ -40,9 +43,9 @@
                 <label for="mail">
                     <span>E-mail: </span>
                     <strong><abbr title="required">*</abbr></strong>
-                  </label>
-                  <input type="email" id="mail" name="usermail">
-                  <button type="submit">Subscribe</button>
+                </label>
+                <input type="email" id="mail" name="usermail">
+                <button type="submit">Subscribe</button>
             </fieldset>
         </form>
     </main>
