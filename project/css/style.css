@@ -51,6 +51,10 @@ h2 {
     font-size: 1.5em;
 }
 
+label {
+    display: inline-block;
+}
+
 .midsection {
     text-align: center;
 }
